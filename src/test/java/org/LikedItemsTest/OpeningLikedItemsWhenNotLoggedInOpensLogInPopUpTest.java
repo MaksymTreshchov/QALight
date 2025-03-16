@@ -6,7 +6,7 @@ import org.junit.Test;
 public class OpeningLikedItemsWhenNotLoggedInOpensLogInPopUpTest extends BaseTest {
 
     @Test
-    public void openingLikedItemsWhenNotLoggedInOpensLogInPopUpTest() {
+    public void t5_openingLikedItemsWhenNotLoggedInOpensLogInPopUpTest() {
         pageProvider.getHomePage().openPage().getHeaderAndShoppingCartElements().clickOnLikedProductsButton();
         pageProvider.getHomePage().getHeaderAndShoppingCartElements().checkIsLoginButtonVisible();
     }

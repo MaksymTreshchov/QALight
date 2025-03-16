@@ -7,7 +7,7 @@ public class SearchTest extends BaseTest {
 final String SEARCH_TEXT = "Mex Nutrition, Nitro Whey, 910 g";
 
     @Test
-    public void searchTest() {
+    public void t3_searchTest() {
         pageProvider.getHomePage().openPage().getHeaderAndShoppingCartElements().enterTextIntoSearchFormAndPerformSearch(SEARCH_TEXT);
         pageProvider.getSearchResultsPage().checkIsRedirectToSearchResultsPage().checkIsSearchResultsPageContainsSearchedItems(SEARCH_TEXT);
 

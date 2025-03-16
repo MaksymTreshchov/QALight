@@ -1,0 +1,59 @@
+#Test Check that shopping cart can be opened when item is added to it
+precondition: User doesn't have any items in the shopping cart
+
+Steps
+1. Open Home page https://bcaa.ua/
+2. Navigate to Protein page
+3. Add first item from PLP to the shopping cart
+4. Open shopping cart
+
+Expected result: Checkout button is visible
+
+#Test Check that shopping cart persists between tabs
+preconditions: user doesn't have any items in the shopping cart
+
+Steps
+1. Open Home page https://bcaa.ua/
+2. Navigate to Protein page
+3. Add first item from PLP to the shopping cart
+4. Open shopping cart
+5. Check that checkout button is visible
+6. Open new tab
+7. Open Home page https://bcaa.ua/
+8. Open shopping cart
+9. Check that checkout button is visible
+
+Expected result: Checkout button is visible in both tabs
+
+#Test Check Search function
+
+Steps:
+1. Open Home page https://bcaa.ua/
+2. input existing product name in search field
+3. Click on search button
+
+Expected result: Searched item is shown at the top of the search results
+
+#Test Check that user can change quantity in checkout
+preconditions: user doesn't have any items in the shopping cart
+
+Steps
+1. Open Home page https://bcaa.ua/
+2. Navigate to Protein page
+3. Add first item from PLP to the shopping cart
+4. Open shopping cart
+5. Click on Checkout button
+6. Click on edit order button
+7. Add 1 more item to the order using + button
+8. Click on close popup button
+
+Expected result: quantity of the item in the shopping cart is updated
+
+#Test Check that opening Liked items page opens log in pop up if user is not logged in
+preconditions: user is not logged in
+
+Steps
+1. Open Home page https://bcaa.ua/
+2. Open Liked items page
+
+Expected result: Log in pop up is shown
